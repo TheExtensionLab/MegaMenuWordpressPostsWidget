@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<widgets>
+    <wordpress_post_menu_block type="theextensionlab_megamenuwordpressposts/widget_wordpress_post">
+        <name>MegaMenu - Featured Wordpress Post</name>
+        <parameters>
+            <wordpress_post_id translate="label">
+                <visible>1</visible>
+                <label>Post Id</label>
+                <type>text</type>
+                <description>Wordpress post ID: can be found in url of wordpress post edit page or in DB</description>
+            </wordpress_post_id>
+            <featured_image>
+                <visible>1</visible>
+                <required>0</required>
+                <label>Featured Image</label>
+                <type>label</type>
+                <helper_block>
+                    <type>theextensionlab_widgetimage/adminhtml_widget_image_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Image...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </featured_image>
+            <display_on>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Display On</label>
+                <type>multiselect</type>
+                <value>small,medium,large</value>
+                <source_model>theextensionlab_megamenu/config_source_display</source_model>
+            </display_on>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template</label>
+                <type>select</type>
+                <value>theextensionlab/megamenu/wordpress/post.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>theextensionlab/megamenu/wordpress/post.phtml</value>
+                        <label>Default Featured Category Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </wordpress_post_menu_block>
+</widgets>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheExtensionLab_MegaMenuWordpressPosts>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <TheExtensionLab_MegaMenu/>
+                <Fishpig_Wordpress/>
+            </depends>
+        </TheExtensionLab_MegaMenuWordpressPosts>
+    </modules>
+</config>

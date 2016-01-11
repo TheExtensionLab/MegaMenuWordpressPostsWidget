@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheExtensionLab_MegaMenuWordpressPosts>
+            <version>0.1.0</version>
+        </TheExtensionLab_MegaMenuWordpressPosts>
+    </modules>
+
+    <global>
+        <blocks>
+            <theextensionlab_megamenuwordpressposts>
+                <class>TheExtensionLab_MegaMenuWordpressPosts_Block</class>
+            </theextensionlab_megamenuwordpressposts>
+        </blocks>
+
+        <models>
+            <theextensionlab_megamenuwordpressposts>
+                <class>TheExtensionLab_MegaMenuWordpressPosts_Model</class>
+            </theextensionlab_megamenuwordpressposts>
+        </models>
+
+        <events>
+            <megamenu_prepare_prefetch_models_after>
+                <observers>
+                    <theextensionlab_megamenuwordpressposts>
+                        <class>theextensionlab_megamenuwordpressposts/observer</class>
+                        <method>megamenuPreparePrefetchModelsAfter</method>
+                    </theextensionlab_megamenuwordpressposts>
+                </observers>
+            </megamenu_prepare_prefetch_models_after>
+        </events>
+    </global>
+</config>
